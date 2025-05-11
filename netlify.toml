@@ -1,9 +1,6 @@
 [build]
-base = "blast-bot-js"              # subfolder project bot kamu
-functions = "netlify/functions"    # relatif terhadap base
+base = "blast-bot-js"
+publish = ""
 command = "npm install"
+functions = "blast-bot-js/netlify/functions"
 
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
